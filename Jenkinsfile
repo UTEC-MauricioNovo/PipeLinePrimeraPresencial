@@ -4,14 +4,14 @@ pipeline {
     stage('Construyendo la App / Print Message') {
       steps {
         echo 'Paso 1 Construyendo la App'
-        sh 'ejecutar_constructor_script.sh'
+        sh 'sh ejecutar_constructor_script.sh'
       }
     }
 
     stage('Ejecutando Linux') {
       steps {
         echo 'Realizando la prueba en Linux'
-        sh 'ejecutar_test_linux.sh'
+        sh 'sh ejecutar_test_linux.sh'
       }
     }
 
